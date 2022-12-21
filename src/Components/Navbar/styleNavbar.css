@@ -1,0 +1,58 @@
+.navbar ul{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    
+}
+
+.navbar ul p{
+    color: white;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar-logo{
+    width:50px ;
+    height: 80px;
+}
+
+.navbar{
+    width: 100%;
+
+}
+
+/*-----navbar mui----*/
+
+#navbar{
+    background-color: black;
+    width: 100%;
+  /*  border: 5px solid blue;*/
+}
+
+#menuOk p{
+    font-weight: bold;
+    color: white;
+}
+
+#menudrop{
+    background-color: black;
+}
+
+.menu-appbar1{
+  height: 100px;
+    width: 100px;
+  
+    
+  
+}
+/* para menu despliega*/
+.menu-appbar1 p{
+    padding: 5px;
+    
+ 
+}
+
+.socialnet{
+    padding: 20px;
+}

@@ -1,0 +1,28 @@
+.title-menu{
+    background-color:  #014e35;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+#menu-logo{
+    width:10vw;
+}
+
+.title-menu-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-menu-content p{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.title-menu-content img{
+    width: 190px;
+    margin-right: 10px;
+}

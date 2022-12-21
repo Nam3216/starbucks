@@ -1,0 +1,34 @@
+.title-locations{
+    background-color:  #014e35;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.title-locations-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-locations-content p{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.title-locations-content img{
+
+    margin-right: 10px;
+  
+}
+
+#menu-logo{
+    width: 190px;
+}
+
+#under{
+    width: 30vw;
+}

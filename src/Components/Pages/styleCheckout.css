@@ -1,0 +1,171 @@
+.title-checkout{
+    background-color:  #014e35;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.title-checkout-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-checkout-content p{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.title-checkout-content img{
+    width: 190px;
+    margin-right: 10px;
+}
+
+/*------tabla------*/
+
+.table{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.table-title{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#title-product{
+    width: 20%;
+    
+}
+
+#title-title{
+    width: 20%;
+}
+
+#title-quantity{
+    width: 20%;
+}
+
+#title-price{
+    width: 20%;
+}
+
+#title-delete{
+    width: 20%;
+}
+
+.table-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#item-product{
+    width: 20%;
+   
+}
+
+#item-title{
+    width: 20%;
+    
+}
+
+#item-quantity{
+    width: 20%;
+}
+
+#item-price{
+    width: 20%;
+}
+
+#item-delete{
+    width: 20%;
+}
+
+/*----*/
+
+#checkout-button{
+    border-radius: 30px;
+    background-color:   #014e35;
+}
+
+#checkout-button1{
+    border-radius: 30px;
+    background-color:   #014e35;
+}
+
+.total-button{
+    margin-top: 50px;
+}
+
+#cart{
+    width: 50vw;
+}
+
+@media screen and (max-width: 900px) {
+
+    .table{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-title{
+        display: none;
+    }
+
+    .table-item{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      
+        margin-top: 90px;
+       
+    }
+
+    #item-product{
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        
+       
+    }
+    
+    #item-title{
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        
+    }
+    
+    #item-quantity{
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #item-price{
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #item-delete{
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+    }
+    
+
+
+
+
+}
+
