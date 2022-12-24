@@ -1,19 +1,23 @@
-import React from "react";
-import { Grid,Container } from "@mui/material";
+import React, { useState } from "react";
+import { Grid,Container, Button } from "@mui/material";
 import "./styleItem.css"
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import Divider from '@mui/material/Divider';
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext } from "react";
 import { ContextElement } from "../../Context/Context";
 
+
 const Item=({data,origin,keyOk}:any)=>{
+    const[addTrue,setAddTrue]=useState(false)
     const{id,img,imgDetail,title,quantity,price,description,category,rating}=data
     const{AddCart,cartList}=useContext(ContextElement)
+    const Navigate=useNavigate()
 //recibo product tb, aca no lo uso, paso data directo como producto, pero en checkout si necesitaba pasarle el producto a addHandler, asique para q la funcion sea igual aca tb le paso
     const addHandler=(quantity:any, product:any)=>{
        
         AddCart(data,quantity)
+        setAddTrue(true)
     }
     console.log(cartList, "cartList")
 
@@ -28,7 +32,7 @@ const Item=({data,origin,keyOk}:any)=>{
                     </Grid>
 
                 ):(
-                    <Grid item md={12} xs={12} key={id} >
+                    <Grid item md={12} xs={12} key={id} className="item-container" >
                         <div className="title-detail">
                             <div className="title-detail-content">
                                 <img src={imgDetail} alt="loading" id="img-detail"/>
@@ -63,8 +67,15 @@ const Item=({data,origin,keyOk}:any)=>{
                                 </div>
                                 <ItemCount addHandler={addHandler} initial={1} product={data} />
                             </div>
-                           
+                            
+                            
+                            
                         </div>
+                        <div>
+                        {addTrue && <Button variant="contained" id="button-buy" onClick={()=>Navigate("/buy")} >Buy Product</Button> }
+                        </div>
+                 
+                        
                 
                     </Grid>
                 )}

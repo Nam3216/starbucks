@@ -14,7 +14,7 @@
 }
 
 .title-locations-content p{
-    font-size: 32px;
+    font-size: 2em;
     font-weight: bold;
     color: white;
 }
@@ -26,9 +26,10 @@
 }
 
 #menu-logo{
-    width: 190px;
+    width: 15vw;
 }
 
 #under{
-    width: 30vw;
+    width: 40vw;
+    margin-top: 50px;
 }

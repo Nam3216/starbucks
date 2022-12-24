@@ -6,10 +6,13 @@ import { ContextElement } from "../../Context/Context";
 import ItemCount from "../ItemCount/ItemCount";
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
+import { useNavigate } from "react-router-dom";
 
 const Checkout=()=>{
     const[checkCart, setCheckCart]=useState(false)
     const{cartList, AddCart,priceOk,EmptyCart,DeleteProduct}=useContext(ContextElement)
+    const Navigate=useNavigate()
+
 
     const addHandler=(quantity:number, product:any)=>{
         AddCart(product,quantity)
@@ -32,12 +35,12 @@ const Checkout=()=>{
                 <>
                     <div className="title-checkout">
                         <div className="title-checkout-content">
-                            <img src="logoblackok.png" alt="loading"/>
+                            <img src="starbucks/logoblackok.png" alt="loading"/>
                             <p>Cart</p>
                         </div>
                     </div>
                     <div>
-                        <img src="cartEmpty.gif" alt="loading" id="cart"/>
+                        <img src="starbucks/cartEmpty.gif" alt="loading" id="cart"/>
                     </div>
                 </>
             ):(
@@ -45,7 +48,7 @@ const Checkout=()=>{
                     <Grid item md={12} xs={12}>
                     <div className="title-checkout">
                         <div className="title-checkout-content">
-                            <img src="logoblackok.png" alt="loading"/>
+                            <img src="starbucks/logoblackok.png" alt="loading"/>
                             <p>Cart </p>
                         </div>
                     </div>
@@ -80,6 +83,7 @@ const Checkout=()=>{
                     <div className="total-button">
                         <div>Total Price: ${priceOk} </div>
                         <Button variant="contained" id="checkout-button1" onClick={EmptyCart}>Empty Cart</Button>
+                        <Button variant="contained" id="checkout-button2" onClick={()=>Navigate("/buy")}>Buy</Button>
                     </div>
                         
                     

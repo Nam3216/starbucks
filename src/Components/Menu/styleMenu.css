@@ -9,9 +9,33 @@
 
 .food{
    margin-left: 100px;
+   margin: 0 auto;
 }
 
 .drink{
     margin-left: 100px;
+    margin: 0 auto;
+
+}
+
+@media screen and (min-width: 900px) {
+    .menu-container{
+        margin-top: 60px;
+    }
+    
+    .menu-container-menu{
+        margin-top: 80px;
+        
+    }
+    
+    .food{
+       margin-left: 100px;
+    }
+    
+    .drink{
+        margin-left: 100px;
+    
+    }
+
 
 }

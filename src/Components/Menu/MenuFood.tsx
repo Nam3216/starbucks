@@ -38,7 +38,7 @@ const MenuFood=()=>{
     return(
         <Grid container className="menu-container-menu">
             <div className="food">
-           <h3>Food</h3>
+                <h3>Food</h3>
            </div>
            <Grid container className="menu-container">
             {list.map((product:any)=>{

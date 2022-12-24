@@ -1,0 +1,23 @@
+form input{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 30vw;
+    border-radius: 30px;
+    height: 30px;
+    border: 1px solid  #014e35;
+}
+
+.form{
+    margin-top: 50px;
+}
+
+.form p{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#button-buy{
+    background-color:   #014e35;
+    border-radius: 30px;
+}

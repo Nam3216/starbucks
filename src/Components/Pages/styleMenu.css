@@ -5,8 +5,8 @@
     margin-top: 20px;
 }
 
-#menu-logo{
-    width:10vw;
+#menu-logo1{
+    width:15vw;
 }
 
 .title-menu-content{
@@ -17,7 +17,7 @@
 }
 
 .title-menu-content p{
-    font-size: 32px;
+    font-size: 2em;
     font-weight: bold;
     color: white;
 }

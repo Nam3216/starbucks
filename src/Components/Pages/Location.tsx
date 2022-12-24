@@ -8,7 +8,7 @@ const Locations=()=>{
         <div>
             <div className="title-locations">
                 <div className="title-locations-content">
-                    <img src="logoblackok.png" alt="loading" id="menu-logo"/>
+                    <img src="starbucks/logoblackok.png" alt="loading" id="menu-logo"/>
                     <p>Shops</p>
                 </div>
         
@@ -16,7 +16,7 @@ const Locations=()=>{
             </div>
                 
    
-            <img src="under.gif" alt="loading" id="under"/>
+            <img src="starbucks/under.gif" alt="loading" id="under"/>
 
         </div>
     )

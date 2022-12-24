@@ -22,7 +22,7 @@
 
 .info-detail{
 
-    margin-top: 80px;
+    margin-top: 60px;
     
 
 }
@@ -70,6 +70,14 @@
     margin-right: 10px;
 }
 
+#button-buy{
+    border-radius: 30px;
+    background-color:   #014e35;
+    display: block;
+    margin: 0 auto;
+}
+
+
 @media screen and (min-width: 900px) {
 
     .item{
@@ -91,14 +99,15 @@
     }
     
     .title-detail-content p{
-        font-size: 32px;
+        font-size: 2em;
         font-weight: bold;
         color: white;
     }
 
     .info-detail{
         display: flex;
-        min-height: 400px;
+        min-height: 300px;
+       
     }
 
     .description-detail{
@@ -121,5 +130,8 @@
         text-align: left;
     }
 
+    .item-container{
+        height: 700px;
+    }
     
 }

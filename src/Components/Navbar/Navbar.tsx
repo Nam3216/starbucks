@@ -74,7 +74,7 @@ function Navbar() {
             }}
            
           >
-            <Link to="/"><li><img src="logo.jpg" className="navbar-logo" alt="loading"/></li></Link>
+            <Link to="/starbucks/"><li><img src="logo.jpg" className="navbar-logo" alt="loading"/></li></Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} >
@@ -135,7 +135,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-             <Link to="/"><li><img src="logo.jpg" className="navbar-logo" alt="loading"/></li></Link>
+             <Link to="/starbucks/"><li><img src="logo.jpg" className="navbar-logo" alt="loading"/></li></Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} id="menuOk">
            

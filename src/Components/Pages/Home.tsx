@@ -14,7 +14,7 @@ const Home=()=>{
             <div className="home-title">
                 <Grid container className="home-title-title">
                     <Grid item md={12} xs={12} id="title">
-                        <img src="starbucks_logo1.png" id="img-logo"/>
+                        <img src="/starbucks/starbucks_logo1.png" id="img-logo"/>
                         <p>STARBUCKS</p>
                     </Grid>
                     <div className="home-title-button">

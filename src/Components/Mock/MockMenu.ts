@@ -3,7 +3,7 @@ import React from "react";
 const MockMenu=[
     {
         id:1,
-        img:"bagel-modified.png",
+        img:"starbucks/bagel-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FBagel-Multicereal-425-x-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Bagel",
         price:200,
@@ -14,7 +14,7 @@ const MockMenu=[
         
     },
     {   id:2,
-        img:"coldcofee-modified.png",
+        img:"starbucks/coldcofee-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FShaken%20Espresso%20Frio%20Chocolate.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Cold Coffee",
         price:400,
@@ -26,7 +26,7 @@ const MockMenu=[
     },
     {   
         id:3,
-        img:"colddrink-modified.png",
+        img:"starbucks/colddrink-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FFrozen%20Frutilla%20A%C3%A7ai%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Cold Drink",
         price:200,
@@ -38,7 +38,7 @@ const MockMenu=[
     },
     {   
         id:4,
-        img:"frapuccino-modified.png",
+        img:"starbucks/frapuccino-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FCaramel%20Frapp%20425x425%20sin%20fondo%20(1).png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Frapuccino",
         price:500,
@@ -50,7 +50,7 @@ const MockMenu=[
     },
     {   
         id:5,
-        img:"hotcoffee-modified.png",
+        img:"starbucks/hotcoffee-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FAmericano%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Hot Coffee",
         price:300,
@@ -62,7 +62,7 @@ const MockMenu=[
     },
     {   
         id:6,
-        img:"hottea-modified.png",
+        img:"starbucks/hottea-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FChai%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Hot Tea",
         price:200,
@@ -74,7 +74,7 @@ const MockMenu=[
     },
     {   
         id:7,
-        img:"icedtea-modified.png",
+        img:"starbucks/icedtea-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FTe%20Verde%20Frutilla%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Iced Tea",
         price:200,
@@ -85,7 +85,7 @@ const MockMenu=[
         
     }, {
         id:8,
-        img:"icedtea-modified.png",
+        img:"starbucks/icedtea-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FTe%20Verde%20Frutilla%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Iced Tea",
         price:200,
@@ -96,7 +96,7 @@ const MockMenu=[
         
     }, {
         id:9,
-        img:"icedtea-modified.png",
+        img:"starbucks/icedtea-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FTe%20Verde%20Frutilla%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Iced Tea",
         price:200,
@@ -108,7 +108,7 @@ const MockMenu=[
     },
     {   
         id:10,
-        img:"oatmeal-modified.png",
+        img:"starbucks/oatmeal-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FPorridge-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Oat Meal",
         price:100,
@@ -120,7 +120,7 @@ const MockMenu=[
     },
     {   
         id:11,
-        img:"sandwich-modified.png",
+        img:"starbucks/sandwich-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FSand-JyQ-Gluten-Free-425-x-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Sandwich",
         price:400,
@@ -132,7 +132,7 @@ const MockMenu=[
     },
     {   
         id:12,
-        img:"snacks-modified.png",
+        img:"starbucks/snacks-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FMix-frutos-secos-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Snacks",
         price:200,
@@ -144,7 +144,7 @@ const MockMenu=[
     },
     {   
         id:13,
-        img:"wrap-modified.png",
+        img:"starbucks/wrap-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FCheese-Avocado-Toast-425-x-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Wrap",
         price:500,
@@ -156,7 +156,7 @@ const MockMenu=[
     },
     {   
         id:14,
-        img:"wrap-modified.png",
+        img:"starbucks/wrap-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FCheese-Avocado-Toast-425-x-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Wrap",
         price:500,
@@ -168,7 +168,7 @@ const MockMenu=[
     },
     {   
         id:15,
-        img:"wrap-modified.png",
+        img:"starbucks/wrap-modified.png",
         imgDetail:"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FCheese-Avocado-Toast-425-x-425.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop",
         title:"Wrap",
         price:500,

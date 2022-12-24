@@ -144,6 +144,10 @@
     width: 30vw;
 }
 
+#img-logo{
+    width: 8vw;
+}
+
 /*---de aca a abajo todo ok---*/
 @media screen and (max-width: 900px) {
 /*----------esto ok-----------*/
@@ -160,7 +164,7 @@
         display: grid;
       
         background-color: #015c33;
-        width: 40vw;
+        width: 80vw;
         margin: 0 auto;
         margin-top: 50px;
         
@@ -169,13 +173,20 @@
     .home-uber{
         margin: 0 auto;
         padding: 50px;
-        border: 3px solid white;
+       
+        width: inherit;
+      
         
     }
 
     .home-uber p{
         color: white;
         padding: 20px;
+    }
+
+    #title2{
+        font-size: small;
+        font-weight: bold;
     }
     
 
@@ -202,11 +213,35 @@
         */
         
     }
+
+    #title{
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+ #button-menu{
+    width: 10px;
+ }
+
+ #button-shops{
+    width: 10px;
+ }
+
+ .home-uber p{
+    color: white;
+    padding: 20px;
+    font-size: small;
 }
 
-#img-logo{
-    width: 8vw;
+   
+    
 }
+
+
+
+
 @media screen and (max-width: 600px) {
      /*asi esta responsive fondo cuando es chico hasta 600*/
     .home-title{
