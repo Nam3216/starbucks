@@ -44,7 +44,7 @@ const ItemCount=({addHandler,initial,product}:DataType)=>{
                 <p onClick={add}>+</p>
             </div>
             <div className="counter-button">
-                <Button variant="contained" onClick={()=>addHandler(count,product)}>Units</Button>
+                <Button variant="contained" onClick={()=>addHandler(count,product)}>Add</Button>
 
             </div>
         </>

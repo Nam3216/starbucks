@@ -10,6 +10,7 @@ const ItemDetail=()=>{
     const[list,setList]=useState<any>([])
     const{id}=useParams()
 
+
     //aca en backend deberia llamarse a la ruta de findbyid
     const GetObject=()=>{
         return new Promise((resolve,reject)=>{

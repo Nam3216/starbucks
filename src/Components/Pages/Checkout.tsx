@@ -1,32 +1,52 @@
 import React, { useEffect,useState } from "react";
 import { Grid } from "@mui/material";
 import "./styleCheckout.css"
-import { useContext } from "react";
-import { ContextElement } from "../../Context/Context";
+//import { useContext } from "react";
+//import { ContextElement } from "../../Context/Context";
 import ItemCount from "../ItemCount/ItemCount";
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import { useNavigate } from "react-router-dom";
+import {useSelector,useDispatch} from "react-redux"
+import { addProduct,emptyListRed,deleteProduct,totalPrice } from "../../store/cartSlice";
+
+
 
 const Checkout=()=>{
     const[checkCart, setCheckCart]=useState(false)
-    const{cartList, AddCart,priceOk,EmptyCart,DeleteProduct}=useContext(ContextElement)
+    //const{cartList, AddCart,priceOk,EmptyCart,DeleteProduct}=useContext(ContextElement)
     const Navigate=useNavigate()
+    const dispatch=useDispatch()
+    const {cartListRed,totalPriceState}=useSelector((state:any)=>state.cart )
+   //const {cartListRed}:any=useSelector<any>(state=>state.cart)
 
 
     const addHandler=(quantity:number, product:any)=>{
-        AddCart(product,quantity)
+        //console.log("okkkk")
+       // AddCart(product,quantity)
+      dispatch(addProduct({
+        product,
+        quantity
+       }))
+       dispatch(totalPrice())//asi se actualiza el totalPrice tb
+      
+
+    }
+
+    const deleteHandler=(item:any)=>{//handler asi llama tb al totalPrice y actual
+        dispatch(deleteProduct({item}))
+        dispatch(totalPrice())
 
     }
 
     useEffect(()=>{
-        if(cartList.length==0){
+        if(cartListRed.length==0){
             setCheckCart(false)
 
         }else{
             setCheckCart(true)
         }
-    })
+    },[])
 
 
     return(
@@ -65,14 +85,14 @@ const Checkout=()=>{
                 
                 
 
-                    {cartList.map((item)=>{
+                    {cartListRed.map((item:any)=>{
                         return(<>
                                 <div className="table-item">
                                     <div id="item-product"><img src={item.img} alt="loading"/></div>
                                     <div id="item-title"><p>{item.title}</p> </div>
                                     <div id="item-quantity"><ItemCount addHandler={addHandler} initial={item.quantity} product={item} /> </div>
                                     <div id="item-price"><p>${item.quantity * item.price}</p> </div>
-                                    <div id="item-delete"><Button variant="contained" id="checkout-button" onClick={()=>DeleteProduct(item.id)}>Delete</Button> </div>
+                                    <div id="item-delete"><Button variant="contained" id="checkout-button" onClick={()=>deleteHandler(item)}>Delete</Button> </div>
                                 </div>
                                 <Divider component="li"  /> 
                             </>
@@ -81,8 +101,8 @@ const Checkout=()=>{
                         
                     })} 
                     <div className="total-button">
-                        <div>Total Price: ${priceOk} </div>
-                        <Button variant="contained" id="checkout-button1" onClick={EmptyCart}>Empty Cart</Button>
+                        <div>Total Price: ${totalPriceState} </div>
+                        <Button variant="contained" id="checkout-button1" onClick={()=>dispatch(emptyListRed())}>Empty Cart</Button>
                         <Button variant="contained" id="checkout-button2" onClick={()=>Navigate("/buy")}>Buy</Button>
                     </div>
                         
@@ -99,3 +119,5 @@ const Checkout=()=>{
 }
 
 export default Checkout
+
+//onClick={()=>dispatch(deleteProduct({item}))}

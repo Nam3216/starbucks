@@ -1,12 +1,14 @@
 import React,{useState,useEffect} from "react";
 import Button from '@mui/material/Button';
-import { useContext } from "react";
-import { ContextElement } from "../../Context/Context";
+//import { useContext } from "react";
+//import { ContextElement } from "../../Context/Context";
 import "./styleBuy.css"
+import { useSelector } from "react-redux";
 
 const Buy=()=>{
     const[info,setInfo]=useState({name:"",surname:"",address:"",creditcard:"",security:""})
-    const{priceOk}=useContext(ContextElement)
+  //  const{priceOk}=useContext(ContextElement)
+    const{totalPriceState}=useSelector((state:any)=>state.cart)
 
     const inputHandler=(e:any)=>{
         e.preventDefault()
@@ -29,7 +31,7 @@ const Buy=()=>{
                 </div>
             <div className="form">
                 <p>Please insert your data so we can deliver to you the products you has just chosen</p>
-                <p>Total Price:${priceOk} </p>
+                <p>Total Price:${totalPriceState} </p>
                 <form onSubmit={handleSubmit}>
                 
                     <input type="text" name="name" placeholder="Name" onChange={inputHandler} />

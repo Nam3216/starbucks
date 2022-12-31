@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import {createContext} from "react"
-
+//NO SE USA CONTEXT, SE USA REDUX. ANTES LO USABA
 const contextType={//asi doy tipo a lista en ts, detallar las keys del obj
     cartList:[{id:1,
         img:"",

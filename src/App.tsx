@@ -7,13 +7,13 @@ import Navbar from './Components/Navbar/Navbar';
 import Menu from './Components/Pages/Menu';
 //import ItemDetail from './Components/Menu/ItemDetail';
 import Detail from './Components/Pages/Detail';
-import Context from './Context/Context';
+//import Context from './Context/Context';
 import Checkout from './Components/Pages/Checkout';
 import Footer from './Components/Pages/Footer';
 import Locations from './Components/Pages/Location';
 import Buy from './Components/Pages/Buy';
-
-
+/*<div className="App">
+      <Context>*/
 function App() {
 
   useEffect(()=>{
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <Context>
+    
       <div className="content">
         <BrowserRouter>
           <header>
@@ -45,7 +45,7 @@ function App() {
           </footer>
         </BrowserRouter>
       </div>
-      </Context>
+     
     </div>
   );
 }
